@@ -1,0 +1,260 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAP_KEYBOARD DIALOG DISCARDABLE  0, 0, 187, 191
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "MoHo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_MAP_KEYBOARD_OK,5,175,85,14
+    PUSHBUTTON      "Cancel",IDC_MAP_KEYBOARD_CANCEL,95,175,85,14
+    GROUPBOX        "Keyboard Configuration",IDC_MAP_KEYBOARD_CAPTION,5,5,
+                    175,165
+    LTEXT           "Action",IDC_MAP_KEYBOARD_ACTION_CAPTION,10,20,75,8
+    LTEXT           "Key",IDC_MAP_KEYBOARD_KEY_CAPTION,95,20,80,8
+    LTEXT           "Up",IDC_MAP_KEYBOARD_ACTION1,10,30,80,8
+    LTEXT           "Down",IDC_MAP_KEYBOARD_ACTION2,10,45,80,8
+    LTEXT           "Left",IDC_MAP_KEYBOARD_ACTION3,10,60,80,8
+    LTEXT           "Right",IDC_MAP_KEYBOARD_ACTION4,10,74,75,8
+    LTEXT           "Attack",IDC_MAP_KEYBOARD_ACTION5,10,90,80,8
+    LTEXT           "Jump",IDC_MAP_KEYBOARD_ACTION6,10,105,75,8
+    LTEXT           "Block",IDC_MAP_KEYBOARD_ACTION7,10,119,80,8
+    LTEXT           "Brake",IDC_MAP_KEYBOARD_ACTION8,10,135,80,8
+    LTEXT           "Throw",IDC_MAP_KEYBOARD_ACTION9,10,150,80,8
+    PUSHBUTTON      "Define",IDC_MAP_KEYBOARD_MAPPING1,95,30,80,15
+    PUSHBUTTON      "Define",IDC_MAP_KEYBOARD_MAPPING2,95,45,80,15
+    PUSHBUTTON      "Define",IDC_MAP_KEYBOARD_MAPPING3,95,60,80,15
+    PUSHBUTTON      "Define",IDC_MAP_KEYBOARD_MAPPING4,95,75,80,15
+    PUSHBUTTON      "Define",IDC_MAP_KEYBOARD_MAPPING5,95,90,80,15
+    PUSHBUTTON      "Define",IDC_MAP_KEYBOARD_MAPPING6,95,105,80,15
+    PUSHBUTTON      "Define",IDC_MAP_KEYBOARD_MAPPING7,95,120,80,15
+    PUSHBUTTON      "Define",IDC_MAP_KEYBOARD_MAPPING8,95,135,80,15
+    PUSHBUTTON      "Define",IDC_MAP_KEYBOARD_MAPPING9,95,150,80,15
+END
+
+IDD_START DIALOG DISCARDABLE  0, 0, 140, 206
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "MoHo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Install",IDC_START_INSTALL,0,115,140,15
+    DEFPUSHBUTTON   "Play Game",IDC_START_PLAY,0,130,140,15
+    PUSHBUTTON      "Video / Sound Options",IDC_START_DEVICE_OPTIONS,0,145,
+                    140,15
+    PUSHBUTTON      "Controller Options",IDC_START_CONTROLLER_OPTIONS,0,160,
+                    140,15
+    PUSHBUTTON      "Uninstall",IDC_START_UNINSTALL,0,175,140,15
+    PUSHBUTTON      "Exit Game",IDC_START_QUIT,0,190,140,15
+    CONTROL         105,IDC_STATIC,"Static",SS_BITMAP,0,0,15,13
+END
+
+IDD_VIDEO_SOUND DIALOG DISCARDABLE  0, 0, 187, 151
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "MoHo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_VIDEO_SOUND_OK,5,135,85,14
+    PUSHBUTTON      "Cancel",IDC_VIDEO_SOUND_CANCEL,95,135,85,14
+    COMBOBOX        IDC_VIDEO_SOUND_DISPLAY_DEVICE_LIST,11,30,165,101,
+                    CBS_DROPDOWNLIST | CBS_SORT | CBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Video Device",IDC_VIDEO_SOUND_VIDEO_DEVICE_CAPTION,10,
+                    20,85,8
+    COMBOBOX        IDC_VIDEO_SOUND_RESOLUTION_LIST,11,60,165,116,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Game Resolution",IDC_VIDEO_SOUND_RESOLUTION_CAPTION,10,
+                    50,85,8
+    GROUPBOX        "Video Options",IDC_VIDEO_SOUND_VIDEO_OPTIONS,5,5,175,75
+    GROUPBOX        "Sound Options",IDC_VIDEO_SOUND_SOUND_OPTIONS,5,85,175,
+                    45
+    LTEXT           "Sound Device",IDC_VIDEO_SOUND_SOUND_DEVICE_CAPTION,11,
+                    100,84,8
+    COMBOBOX        IDC_VIDEO_SOUND_SOUND_DEVICE_LIST,11,109,164,102,
+                    CBS_DROPDOWNLIST | CBS_SORT | CBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CONTROLLER DIALOG DISCARDABLE  0, 0, 332, 122
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "MoHo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_CONTROLLER_OK,150,105,85,14
+    PUSHBUTTON      "Cancel",IDC_CONTROLLER_CANCEL,240,105,85,14
+    GROUPBOX        "Player Two Configuration",
+                    IDC_CONTROLLER_PLAYERTWO_CAPTION,5,55,320,45
+    GROUPBOX        "Player One Configuration",
+                    IDC_CONTROLLER_PLAYERONE_CAPTION,5,5,320,45
+    PUSHBUTTON      "Run 'Game Options' Panel",
+                    IDC_CONTROLLER_RUN_GAME_OPTIONS_PANEL,5,105,135,15
+    PUSHBUTTON      "Redefine Keys",
+                    IDC_CONTROLLER_CONFIGURE_PLAYERONE_DEVICE,215,30,105,14
+    PUSHBUTTON      "Redefine Keys",
+                    IDC_CONTROLLER_CONFIGURE_PLAYERTWO_DEVICE,215,79,105,14
+    COMBOBOX        IDC_CONTROLLER_PLAYERONE_CONTROLLER_LIST,11,30,200,60,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Controller",
+                    IDC_CONTROLLER_PLAYERONE_CONTROL_DEVICE_CAPTION,10,20,
+                    100,8
+    COMBOBOX        IDC_CONTROLLER_PLAYERTWO_CONTROLLER_LIST,11,79,200,60,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Controller",
+                    IDC_CONTROLLER_PLAYERTWO_CONTROL_DEVICE_CAPTION,10,70,95,
+                    8
+END
+
+IDD_MAP_JOYSTICK DIALOG DISCARDABLE  0, 0, 187, 202
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "MoHo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_MAP_JOYSTICK_OK,5,185,85,14
+    PUSHBUTTON      "Cancel",IDC_MAP_JOYSTICK_CANCEL,95,185,85,14
+    GROUPBOX        "Joystick Configuration",IDC_MAP_JOYSTICK_CAPTION,5,5,
+                    175,155
+    LTEXT           "Action",IDC_MAP_JOYSTICK_ACTION_CAPTION1,10,20,75,8
+    LTEXT           "Axis",IDC_MAP_JOYSTICK_AXES_CAPTION,95,20,65,8
+    LTEXT           "Up / Down",IDC_MAP_JOYSTICK_ACTION1,10,30,75,8
+    LTEXT           "Left / Right",IDC_MAP_JOYSTICK_ACTION2,10,45,80,8
+    LTEXT           "Attack",IDC_MAP_JOYSTICK_ACTION5,10,79,80,8
+    LTEXT           "Jump",IDC_MAP_JOYSTICK_ACTION6,10,95,75,8
+    LTEXT           "Block",IDC_MAP_JOYSTICK_ACTION7,10,110,80,8
+    LTEXT           "Brake",IDC_MAP_JOYSTICK_ACTION8,10,125,80,8
+    LTEXT           "Throw",IDC_MAP_JOYSTICK_ACTION9,10,140,80,8
+    PUSHBUTTON      "Run 'Game Options' Panel",
+                    IDC_MAP_JOYSTICK_RUN_GAME_OPTIONS_PANEL,5,165,175,15
+    LTEXT           "Button",IDC_MAP_JOYSTICK_BUTTON_CAPTION,95,70,65,8
+    PUSHBUTTON      "Define",IDC_MAP_JOYSTICK_MAPPING1,95,30,80,15
+    PUSHBUTTON      "Define",IDC_MAP_JOYSTICK_MAPPING2,95,46,80,15
+    PUSHBUTTON      "Define",IDC_MAP_JOYSTICK_MAPPING3,95,80,80,15
+    PUSHBUTTON      "Define",IDC_MAP_JOYSTICK_MAPPING4,95,95,80,15
+    PUSHBUTTON      "Define",IDC_MAP_JOYSTICK_MAPPING5,95,110,80,15
+    PUSHBUTTON      "Define",IDC_MAP_JOYSTICK_MAPPING6,95,125,80,15
+    PUSHBUTTON      "Define",IDC_MAP_JOYSTICK_MAPPING7,95,140,80,15
+    LTEXT           "Action",IDC_MAP_JOYSTICK_ACTION_CAPTION2,10,70,80,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAP_KEYBOARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_START, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_VIDEO_SOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_CONTROLLER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_MAP_JOYSTICK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ENGLISH_LOGO        BITMAP  DISCARDABLE     "bitmap1.bmp"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

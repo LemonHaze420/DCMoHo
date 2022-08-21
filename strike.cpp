@@ -1,0 +1,6 @@
+// Strike.cpp: implementation of the Strike class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "common.h"
+#include "Strike.h"

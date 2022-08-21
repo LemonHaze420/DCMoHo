@@ -1,0 +1,9 @@
+#ifndef TEXTURELISTS_H
+#define TEXTURELISTS_H
+
+#define	TEXLIST_NAME_SIZE	100
+
+extern	char	TEXLIST_MAP[][TEXLIST_NAME_SIZE];
+extern	SINT	TEXLIST_MAP_NUM;
+
+#endif

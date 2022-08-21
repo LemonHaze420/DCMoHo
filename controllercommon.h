@@ -1,0 +1,131 @@
+#ifndef CONTROLLER_COMMON_H
+#define CONTROLLER_COMMON_H
+
+#define		BUTTON_FIRE_PRIMARY				0
+#define		BUTTON_FIRE_SECONDARY			1
+#define		BUTTON_ZOOM_IN					2
+#define		BUTTON_ZOOM_OUT					3
+#define		BUTTON_FOLLOW_TOGGLE			4
+#define		BUTTON_WIDE_VIEW				5
+#define		BUTTON_TIGHT_VIEW				6
+#define		BUTTON_CHANGE_WEAPON			7
+#define		BUTTON_PAUSE					8
+#define		BUTTON_FLIPPER_RIGHT			9
+#define		BUTTON_FLIPPER_LEFT				10
+#define		BUTTON_CHANGE_CONTROL_MODE		11
+#define		BUTTON_SPIN_CLOCKWISE			12
+#define		BUTTON_SPIN_ANTICLOCKWISE		13
+#define		BUTTON_SPIN_CENTRE				14
+#define		BUTTON_NEXT_PRIMARY				15
+#define		BUTTON_BRAKE					16
+#define		BUTTON_GAME_PANEL				17
+#define		BUTTON_HELP						18
+#define		BUTTON_TRICK					19
+#define		BUTTON_BLOCK					20
+#define		BUTTON_THROW					21
+
+#if TARGET == PSX
+#define		BUTTON_PSX_X					22
+#define		BUTTON_PSX_TRIANGLE				23
+#define		BUTTON_PSX_SQUARE				24
+#define		BUTTON_PSX_CIRCLE				25
+#define 	BUTTON_PSX_L1					26
+#define		BUTTON_PSX_SELECT				27
+#define 	BUTTON_PSX_L2					28
+#define 	BUTTON_PSX_R1					29
+#define 	BUTTON_PSX_R2					30
+
+#elif TARGET == DC
+#define		BUTTON_DC_A						22
+#define		BUTTON_DC_B						23
+#define		BUTTON_DC_X						24
+#define		BUTTON_DC_Y						25
+#define		BUTTON_DC_L						26
+#define		BUTTON_DC_R						27
+#define		BUTTON_DC_START					28
+
+#define		BUTTON_DC_C						29
+#define 	BUTTON_DC_RESET					30
+#define		BUTTON_DC_Z						31
+
+#elif TARGET == PC
+#define		BUTTON_CHEAT_START				22
+#define		BUTTON_CHEAT_1					23
+#define		BUTTON_CHEAT_2					24
+#define		BUTTON_CHEAT_3					25
+#define		BUTTON_CHEAT_4					26
+#define		BUTTON_CHEAT_5					27
+#define		BUTTON_CHEAT_6					28
+#define		BUTTON_CHEAT_7					29
+#define		BUTTON_PSX_TRIANGLE				30  //!!
+#define		BUTTON_PSX_X					31
+#endif
+
+#define		BUTTON_TOGGLE_MAPDRAW			32
+#define		BUTTON_CHANGE_GAMUT				33
+#define		BUTTON_SUSPEND					34
+#define		BUTTON_PROFILE_NEXT				35
+#define		BUTTON_PROFILE_PREV				36
+#define		BUTTON_TOGGLE_PROFILER			37
+#define		BUTTON_TOGGLE_DEBUG_TEXT		38
+#define		BUTTON_EDITOR					39
+#define		BUTTON_TOGGLE_MAPWHO_INFO		40
+#define		BUTTON_TOGGLE_COLLISION_INFO	41
+#define		BUTTON_TOGGLE_2D				42
+#define		BUTTON_TELEPORT					43
+#define		BUTTON_SHIFT					44
+#define		BUTTON_RETREAT_LEVEL			45
+#define		BUTTON_ADVANCE_LEVEL			46
+#define 	BUTTON_TOGGLE_WATER				47
+#define 	BUTTON_RELIGHT_LEVEL			48
+#define 	BUTTON_UNLIGHT_LEVEL			49
+#define		BUTTON_TOGGLE_CHARACTER_INFO	50
+#define		BUTTON_SCREENSHOT				51
+#define		BUTTON_UPLOAD_TEXTURE			52
+#define     BUTTON_NEXT_FRAME				53
+#define		BUTTON_QUIT						54
+
+#define		BUTTON_ANALOGUE_UP				55
+#define 	BUTTON_ANALOGUE_DOWN			56
+#define 	BUTTON_ANALOGUE_LEFT			57
+#define 	BUTTON_ANALOGUE_RIGHT			58
+
+#define		ANALOGUE_LEFT_RIGHT		0
+#define		ANALOGUE_DOWN_UP		1
+
+#define		NUM_ANALOGUE_CONTROLS		2
+
+enum	EStreamState
+{
+	NOT_ACTIVE,
+	WAITING_FOR_NUMBER,
+	ACTIVE
+};
+
+enum	EControllerMode
+{
+	CM_MOUSE = 0,
+	CM_KEYBOARD,
+	CM_JOYPAD,
+	CM_KEY_ALT1,
+	CM_JOY_ALT1,
+	CM_JOY_REL,
+	CM_JOY_GOLF,
+	CM_JOY_SHUTTLE,
+	CM_JOY_RACER,
+	CM_JOY_DIRECT,
+	CM_KEY_DIRECT,
+
+	CM_INVALID,
+};
+
+enum	EJoyMode
+{
+	JM_NASTY,
+	JM_XTERMINATOR,
+
+	JM_INVALID,
+};
+
+
+#endif

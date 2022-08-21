@@ -1,0 +1,118 @@
+#ifndef TEXTURE_COMMON_H
+#define TEXTURE_COMMON_H
+
+struct	STCFont
+{
+	SINT			mNumChars;
+	UBYTE			mWidths[256];
+	SINT			mCharsPerLine;
+	SINT			mCharWidth;
+	SINT			mCharHeight;
+};
+
+#define	MAX_INGAME_FONTS 4
+
+
+// ***********************************************************
+
+// numbers for TATT_NUMBERED textures in game
+
+enum	ETexNumbers
+{
+	TN_BEAM1 = 0,
+	TN_BEAM2,
+	TN_LASER,
+
+	TN_WATER,
+
+	TN_HEALTH0,
+	TN_HEALTH1,
+	TN_HEALTH2,
+	TN_HEALTH3,
+
+	TN_START1,
+	TN_START2,
+	TN_START3,
+	TN_START_ARM,
+
+	TN_PANEL,
+	TN_BOXL,
+	TN_BOXM,
+	TN_BOXR,
+	TN_LEVELTYPE,
+	TN_CLOCK,
+
+	TN_ARROW_L,
+	TN_ARROW_R,
+	TN_ARROW_U,
+	TN_ARROW_D,
+
+	TN_WHITE,
+	
+	TN_SKY_CENT,
+	TN_SKY_UP,
+	TN_SKY_DOWN,
+	TN_SKY_LEFT,
+	TN_SKY_RIGHT,
+
+	//  cell types
+	//! The type cells must be in contiguous numeric order, starting with TN_ICE
+	TN_ICE,
+	TN_TRIGGER_GUN,
+	TN_BOOSTR,
+	TN_BOOSTL,
+	TN_BOOSTU,
+	TN_BOOSTD,
+	TN_TRIGGER_GUN_ON,
+	TN_TRIGGER_BAD_GUN,
+	TN_TRIGGER_WAVE,
+	TN_TRIGGER_WAVE_ON,
+	TN_HEALTH,
+	TN_HEALTH_ON
+};
+
+enum	ETexParticle
+{
+	TP_FIRE1 = 0,
+	TP_FIRE2,
+	TP_FIRE3,
+	TP_Z,
+	TP_STAR1,
+	TP_STAR2,
+	TP_EXP00,
+	TP_EXP01,
+	TP_EXP02,
+	TP_EXP03,
+	TP_EXP04,
+	TP_EXP05,
+	TP_EXP06,
+	TP_EXP07,
+	TP_EXP08,
+	TP_EXP09,
+	TP_EXP10,
+	TP_EXP11,
+	TP_EXP12,
+	TP_EXP13,
+	TP_EXP14,
+	TP_EXP15,
+	TP_WAT00,
+	TP_WAT01,
+	TP_WAT02,
+	TP_WAT03,
+	TP_WAT04,
+	TP_WAT05,
+	TP_BUBBLE,
+	TP_RING,
+	TP_SSTAR1,
+	TP_SSTAR2,
+	TP_SMOKE,
+	TP_SHOCKWAVE,
+	TP_HIT1,
+	TP_HIT2,
+	TP_INNER,
+	TP_MIDDLE,
+	TP_OUTER,
+	TP_FLASH_SM,
+};
+
+#endif
